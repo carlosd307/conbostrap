@@ -1,0 +1,1312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ 
+ /*mobileFirts*/
+
+/*-----------------------------------smartphone-----------------------------------------------------------*/
+@media (max-width : 475px)
+{
+ /*body*/
+ 
+ .bodyIndex{
+    width: 95%;
+    height: 100vh;
+    background-image: url(../img/homemoto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ 
+
+   #gridAreas{
+  display: grid;
+    grid-template-areas:"menu cabeza lateral"
+     "menu cabeza lateral"
+     "hero hero lateral"
+     "hero hero lateral"
+     "pie pie pie";
+     ;grid-template-columns: 30% 30% 30%;
+     ;grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+}
+  
+header{
+    grid-area: cabeza;
+   
+}
+
+/*menuNavegacion*/
+
+nav{
+    grid-area: menu;
+   
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+  align-items: flex-start;
+  
+ 
+    
+}
+
+ 
+
+
+.menuNav ul li a {
+    display: block;
+text-decoration: none;
+   
+}
+
+.menuNav li:hover:before {
+    width: 100%;
+}
+
+.menuNav ul li::before {
+    content:"";
+    height: 6px;
+    width:0%;
+    background: #E2A405;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+   
+}
+
+
+#hero{
+    grid-area: hero;
+width: 80%;
+height: 80%;
+}
+
+/*tituloIndex*/
+.heroTitle {
+    width: 50%;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 13%;
+  
+}
+
+    
+
+.heroSubtitle {
+    width: 50%;
+     color: #4D4D4D;;
+    position: relative;
+    left: 13%;
+     
+}
+.btn{
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+}
+.card-img-top{
+    background-color: #dadada;
+}
+aside{
+    grid-area: lateral;
+   
+}
+.logoMarcas{
+    width: 60%;
+}
+.LogodeMcarcas{
+    width:50px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color:  #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+#hero {
+    grid-area: hero;
+
+
+   }
+.tituloBusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.titulo{
+    width: 40%;
+font-size: 25px;
+color: #4D4D4D;;
+text-transform: uppercase;
+
+
+
+}
+.tituloServicios{
+font-size: 15px;
+padding: 10px;
+margin: 10px; 
+position: relative;
+left: 5px;
+}
+
+
+.formPadre {
+padding: 5px;
+margin: 5px; 
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.formNombre {
+padding: 5px;
+margin: 10px;
+}
+.formNombre input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+
+}
+
+
+.formPadre2{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.formDni{
+    padding: 5px;
+    margin: 10px;
+}
+
+.formDni input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+
+}
+
+.formEmail{
+    padding: 5px;
+    margin: 10px;
+}
+.formEmail input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+
+}
+.formTlf {
+    padding: 5px;
+    margin: 10px;
+}
+.formTlf input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+}
+
+
+.formPadre3{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+.formPadre4{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: flex-start;
+
+}
+.enviar{
+padding-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.enviar input {
+ background-color: #E2A405;
+ width: 20%;
+ height: 25px;
+
+}
+
+/*laterales*/
+aside {
+    grid-area: lateral;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+
+
+/*-----------------------------------------shopPagesSmartphone--------------------------------------------**/
+.bodyPages{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.LogodeMcarcasPages{
+width: 25px;
+
+}
+.menuPages{
+    height: 50%;
+}
+.pintado{
+   width: 125%;
+    height: 10%;
+ 
+}
+.marcasPadre{
+  width: 100%;
+    height: 100%;
+   
+      
+
+}
+.imgMarcas{
+    width: 60px;
+    height: 100%;
+    position: relative;
+    right: 10px;
+}
+
+.buscar{
+  width: 10%;
+    position: relative;
+    left: 10px;
+}
+  
+
+.busquedaBuscar{
+    width: 100px;
+    height: 35px;
+}
+.botonBuscar{
+    width: 80px;
+    height: 40px;
+}
+/*----------------------------------------smartphonepagesServicio-------------------------------------*/
+.bodyPages{
+    width:100%;
+    height: 150vh;
+ background-color: #fff;
+}
+#hero {
+    grid-area: hero;
+
+
+   }
+.tituloBusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.titulo{
+    width: 40%;
+font-size: 25px;
+color: #4D4D4D;;
+text-transform: uppercase;
+
+
+
+}
+.tituloServicios{
+font-size: 15px;
+padding: 10px;
+margin: 10px; 
+position: relative;
+left: 5px;
+}
+
+
+.formPadre {
+padding: 5px;
+margin: 5px; 
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.formNombre {
+padding: 5px;
+margin: 10px;
+}
+.formNombre input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+
+}
+
+
+.formPadre2{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.formDni{
+    padding: 5px;
+    margin: 10px;
+}
+
+.formDni input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+
+}
+
+.formEmail{
+    padding: 5px;
+    margin: 10px;
+}
+.formEmail input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+
+}
+.formTlf {
+    padding: 5px;
+    margin: 10px;
+}
+.formTlf input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+}
+
+
+.formPadre3{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+.formPadre4{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: flex-start;
+
+}
+.enviar{
+padding-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.enviar input {
+ background-color: #E2A405;
+ width: 20%;
+ height: 25px;
+
+}
+
+/*laterales*/
+aside {
+    grid-area: lateral;
+    width: 100%;
+    height: 100%;
+   
+  }
+
+}
+
+
+/*-------------------------------------------tablet-----------------------------------------------------*/
+
+@media ( min-width :476px) and ( max-width :1023px) 
+{
+
+/*body*/
+
+.bodyIndex{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/homemoto.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#gridAreas{
+      display: grid;
+    grid-template-areas:"cabeza menu lateral"
+     "cabeza menu lateral"
+     "hero hero lateral"
+     "hero hero lateral"
+     "pie pie pie";
+     ;grid-template-columns: 30% 50% 20%;
+     ;grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+}
+
+header{
+    grid-area: cabeza;
+   
+}
+
+/*menuNavegacion*/
+
+nav{
+    grid-area: menu;
+   
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+  align-items: flex-start;
+  
+ 
+    
+}
+
+ 
+
+
+.menuNav ul li a {
+    display: block;
+text-decoration: none;
+   
+}
+
+.menuNav li:hover:before {
+    width: 100%;
+}
+
+.menuNav ul li::before {
+    content:"";
+    height: 6px;
+    width:0%;
+    background: #E2A405;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+   
+}
+
+
+#hero{
+    grid-area: hero;
+width: 80%;
+height: 80%;
+}
+
+/*tituloIndex*/
+.heroTitle {
+    width: 50%;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 13%;
+   top: 5%;
+}
+
+    
+
+.heroSubtitle {
+    width: 50%;
+     color: #4D4D4D;;
+    position: relative;
+    left: 13%;
+    top: 5%;
+     
+}
+.btn{
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+}
+.card-img-top{
+    background-color: #dadada;
+}
+aside{
+    grid-area: lateral;
+   
+}
+
+.LogodeMcarcas{
+    width:50px;
+    height: 50px;
+    padding: 5px;
+}
+.container{
+  width: 97%;
+
+}
+
+
+footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color:  #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+}
+/*-----------------------------------------shopPagesTablet--------------------------------------------**/
+.bodyPages{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.LogodeMcarcasPages{
+width: 30px;
+
+}
+.menuPages{
+    height: 50%;
+}
+.pintado{
+  
+    width: 125%;
+    height: 10%;
+  
+}
+.marcasPadre{
+  width: 40%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+
+}
+.imgMarcas{
+    width: 30%;
+    height: 100%;
+}
+
+.buscar{
+    width: 67%;
+    height: 10%;
+}
+/*--------------------------------------pagesServiciosTablet-----------------------*/
+
+.bodyIndex{
+    width: 90%;
+    height: 90vh;
+  background-color: whitesmoke;
+}
+
+    /*logoPrincipal*/
+    
+    .logo {
+    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .imgLogo{
+    width: 80%;
+    height: 60%;
+    padding: 5px;
+    margin: 5px;
+    
+    
+    }
+    
+    /*contenido*/
+    
+    #hero {
+        grid-area: hero;
+    padding-top: 100px;
+    
+       }
+   .tituloServicios{
+   position: relative;
+   left: 3%;
+        
+     
+    }
+  
+
+
+.tituloPages{
+    width: 30%;
+    font-size: 25px;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+    position: relative;
+  padding: 15px;
+  margin: 10px;
+
+   
+  
+}
+
+
+
+.formPadre {
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+.formNombre {
+    width: 30%;
+}
+.formNombre input {
+    width: 80%;
+   border-color: transparent;
+ border-bottom: 1px solid #E2A405;
+  
+}
+
+
+.formPadre2{
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+.formDni{
+    width: 30%;
+}
+
+.formDni {
+    width: 30%;
+}
+.formDni input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+
+ .formEmail{
+    width: 30%;
+ }
+ .formEmail input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+.formTlf {
+    width: 30%;
+}
+ .formTlf input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+}
+
+
+.formPadre3{
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: flex-start;
+}
+.enviar{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .enviar input {
+     background-color: #E2A405;
+     width: 20%;
+     height: 25px;
+
+ }
+
+    /*laterales*/
+    aside {
+        grid-area: lateral;
+        width: 100%;
+        height: 100%;
+        
+       
+      }
+ /*logosMarcas*/
+
+.marcasLogoPages{
+    width: 28px;
+    height:25px;
+    padding: 5px;
+    margin: 5px;
+   
+  
+}
+.logoDeMarcasPages{
+    width: 15%;
+    padding: 5px;
+  margin: 5px;
+  position: relative;
+  left: 80%;
+  bottom: 26%;
+
+ 
+
+}
+
+
+.marcasLogoPagesSmarphone{
+    display: none;
+   
+  
+}
+.logoDeMarcasPagesSmarphone{
+  display: none;
+
+}
+
+.carritoPages{
+    width: 50%;   
+   height: 12%;
+   padding: 5px;
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center
+  }
+  
+  .userCarritoPages{
+     width: 30%;
+     height: 35%;
+     padding: 2px;
+     margin: 2px;
+    }
+
+    /*barraDeBusqueda*/
+.busqueda{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    bottom:33%;
+    left: 94%;
+    overflow: hidden;
+    
+}
+.buscar input {
+    width: 80%;
+    height: 40%;
+    background: none;
+    color: #fff;
+    
+
+}
+.busquedaSmarphone{
+    display: none;
+}
+    /*footer*/
+    
+     footer {
+        grid-area: pie;
+        background-color: #E2A405;
+        color:  #4D4D4D;
+        text-align: center;
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        bottom: 0;
+    }
+    .redes {
+        width: 20px;
+        padding: 1px;
+       
+    }
+    /*iconoWs*/
+    .iconoWs {
+        width: 45px;
+        position: fixed;
+        left: 95%;
+      top: 89%;
+    }
+
+}
+
+
+/*-----------------------------------desktop-----------------------------------------------------------*/
+@media ( min-width :1024px) 
+{
+
+
+.bodyIndex{
+    width: 95%;
+    height: 100vh;
+    background-image: url(../img/homemoto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gridAreas{
+ display: grid;
+    grid-template-areas:"cabeza menu lateral"
+     "cabeza menu lateral"
+     "hero hero lateral"
+     "hero hero lateral"
+     "pie pie pie";
+     ;grid-template-columns: 30% 50% 20%;
+     ;grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+}
+
+header{
+    grid-area: cabeza;
+   
+}
+
+/*menuNavegacion*/
+
+nav{
+    grid-area: menu;
+   
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+  align-items: flex-start;
+  
+ 
+    
+}
+
+ 
+
+
+.menuNav ul li a {
+    display: block;
+text-decoration: none;
+   
+}
+
+.menuNav li:hover:before {
+    width: 100%;
+}
+
+.menuNav ul li::before {
+    content:"";
+    height: 6px;
+    width:0%;
+    background: #E2A405;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+   
+}
+
+
+#hero{
+    grid-area: hero;
+width: 80%;
+height: 80%;
+}
+
+/*tituloIndex*/
+.heroTitle {
+    width: 50%;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 13%;
+   top: 5%;
+}
+
+    
+
+.heroSubtitle {
+    width: 50%;
+     color: #4D4D4D;;
+    position: relative;
+    left: 13%;
+    top: 5%;
+     
+}
+.btn{
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+}
+.card-img-top{
+    background-color: #dadada;
+}
+aside{
+    grid-area: lateral;
+   
+}
+
+.LogodeMcarcas{
+    width:50px;
+    height: 50px;
+    padding: 5px;
+}
+.container{
+  width: 97%;
+
+}
+
+
+footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color:  #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+}
+
+/*-----------------------------------------shopPages--------------------------------------------**/
+.bodyPages{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.LogodeMcarcasPages{
+width: 30px;
+
+}
+.menuPages{
+    height: 50%;
+}
+.pintado{
+  
+    width: 125%;
+    height: 10%;
+  
+}
+.marcasPadre{
+  width: 40%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+
+}
+.imgMarcas{
+    width: 30%;
+    height: 100%;
+}
+
+.buscar{
+    width: 67%;
+    height: 10%;
+}
+/*--------------------------------------pagesServicios-----------------------*/
+
+
+
+.bodyIndex{
+    width: 90%;
+    height: 90vh;
+  background-color: whitesmoke;
+}
+
+    /*logoPrincipal*/
+    
+    .logo {
+    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .imgLogo{
+    width: 80%;
+    height: 60%;
+    padding: 5px;
+    margin: 5px;
+    
+    
+    }
+    
+    /*contenido*/
+    
+    #hero {
+        grid-area: hero;
+    padding-top: 100px;
+    
+       }
+   .tituloServicios{
+   position: relative;
+   left: 3%;
+        
+     
+    }
+  
+
+
+.tituloPages{
+    width: 30%;
+    font-size: 25px;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+    position: relative;
+  padding: 15px;
+  margin: 10px;
+
+   
+  
+}
+
+
+
+.formPadre {
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+.formNombre {
+    width: 30%;
+}
+.formNombre input {
+    width: 80%;
+   border-color: transparent;
+ border-bottom: 1px solid #E2A405;
+  
+}
+
+
+.formPadre2{
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+.formDni{
+    width: 30%;
+}
+
+.formDni {
+    width: 30%;
+}
+.formDni input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+
+ .formEmail{
+    width: 30%;
+ }
+ .formEmail input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+.formTlf {
+    width: 30%;
+}
+ .formTlf input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+}
+
+
+.formPadre3{
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: flex-start;
+}
+.enviar{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .enviar input {
+     background-color: #E2A405;
+     width: 20%;
+     height: 25px;
+
+ }
+
+    /*laterales*/
+    aside {
+        grid-area: lateral;
+        width: 100%;
+        height: 100%;
+        
+       
+      }
+ /*logosMarcas*/
+
+.marcasLogoPages{
+    width: 28px;
+    height:25px;
+    padding: 5px;
+    margin: 5px;
+   
+  
+}
+.logoDeMarcasPages{
+    width: 15%;
+    padding: 5px;
+  margin: 5px;
+  position: relative;
+  left: 80%;
+  bottom: 26%;
+
+ 
+
+}
+
+
+.marcasLogoPagesSmarphone{
+    display: none;
+   
+  
+}
+.logoDeMarcasPagesSmarphone{
+  display: none;
+
+}
+
+.carritoPages{
+    width: 50%;   
+   height: 12%;
+   padding: 5px;
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center
+  }
+  
+  .userCarritoPages{
+     width: 30%;
+     height: 35%;
+     padding: 2px;
+     margin: 2px;
+    }
+
+    /*barraDeBusqueda*/
+.busqueda{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    bottom:33%;
+    left: 94%;
+    overflow: hidden;
+    
+}
+.buscar input {
+    width: 80%;
+    height: 40%;
+    background: none;
+    color: #fff;
+    
+
+}
+.busquedaSmarphone{
+    display: none;
+}
+    /*footer*/
+    
+     footer {
+        grid-area: pie;
+        background-color: #E2A405;
+        color:  #4D4D4D;
+        text-align: center;
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        bottom: 0;
+    }
+    .redes {
+        width: 20px;
+        padding: 1px;
+       
+    }
+    /*iconoWs*/
+    .iconoWs {
+        width: 45px;
+        position: fixed;
+        left: 95%;
+      top: 89%;
+    }
+
+
+}
