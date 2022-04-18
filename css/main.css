@@ -142,18 +142,18 @@ margin-top: 100%;
 }
 
 #carouselExampleControls{
-margin-left: 10px;
+margin-left: 8px;
 margin-top: 10%;
 margin-bottom: 3%;
     
 }
-.heroTitleCarru{
+.heroTitleCarruSmarphone{
     width: 100%;
     font-size: 30px;
     padding-top:10%;
-    padding-left: 20px;
+    padding-left: 15px;
 }
-.heroSubtitleCarru{
+.heroSubtitleCarruSmarphone{
 padding-left: 20px;
 }
 
@@ -939,8 +939,19 @@ aside{
 
 /*carrusel*/
 
+.heroTitleCarru{
+    width: 100%;
+    font-size: 30px;
+    padding-top:2%;
+    padding-left: 50px;
+}
+.heroSubtitleCarru{
+padding-left: 80px;
+
+}
+
 .carrusel{
-    grid-area: carrusel;
+grid-area: carrusel;
 background-color: whitesmoke;
 width: 100%;
 height: 1500px;
@@ -949,7 +960,7 @@ height: 1500px;
 
 #carouselExampleControls{
 margin-left: 10px;
-margin-top: 10%;
+margin-top: 5%;
 margin-bottom: 3%;
     
 }
