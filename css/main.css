@@ -22,12 +22,12 @@
 
 }
 
- 
+ /*estructuraConGrid*/
 
    #gridAreas{
   display: grid;
     grid-template-areas:"menu cabeza lateral"
-     "menu cabeza lateral"
+    "menu cabeza lateral"
      "hero hero lateral"
      "hero hero lateral"
      "carrusel carrusel carrusel"
@@ -35,10 +35,13 @@
      "carrusel carrusel carrusel"
      "carrusel carrusel carrusel"
      "pie pie pie";
-     ;grid-template-columns: 30% 50% 10%;
-     ;grid-template-rows: 1fr 1fr 1fr 1fr 1r 3fr 3fr 1fr;
+     ;grid-template-columns: 25% 50% 20%;
+     ;grid-template-rows: 1fr 2fr 2fr 1fr 1r 3fr 3fr 1fr 1fr;
 }
   
+
+/*header*/
+
 header{
     grid-area: cabeza;
    
@@ -54,13 +57,9 @@ nav{
     display: flex;
     flex-direction: row;
   align-items: flex-start;
-  
- 
-    
+
+     
 }
-
- 
-
 
 .menuNav ul li a {
     display: block;
@@ -83,6 +82,7 @@ text-decoration: none;
    
 }
 
+/*contenido*/
 
 #hero{
     grid-area: hero;
@@ -91,6 +91,7 @@ height: 80%;
 }
 
 /*tituloIndex*/
+
 .heroTitle {
     width: 80%;
     color: #4D4D4D;;
@@ -100,8 +101,6 @@ height: 80%;
    font-size: 35px;
   
 }
-
-    
 
 .heroSubtitle {
     width: 80%;
@@ -191,142 +190,6 @@ footer {
 }
 
 
-#hero {
-    grid-area: hero;
-
-
-   }
-.tituloBusqueda{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-.titulo{
-    width: 40%;
-font-size: 25px;
-color: #4D4D4D;;
-text-transform: uppercase;
-
-
-
-}
-.tituloServicios{
-font-size: 15px;
-padding: 10px;
-margin: 10px; 
-position: relative;
-left: 5px;
-}
-
-
-.formPadre {
-padding: 5px;
-margin: 5px; 
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-}
-
-.formNombre {
-padding: 5px;
-margin: 10px;
-}
-.formNombre input {
-width: 80%;
-border-color: transparent;
-border-bottom: 1px solid #E2A405;
-
-}
-
-
-.formPadre2{
-    padding: 5px;
-    margin: 5px; 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.formDni{
-    padding: 5px;
-    margin: 10px;
-}
-
-.formDni input {
-width: 80%;
-border-color: transparent;
-border-bottom: 1px solid #E2A405;
-
-}
-
-.formEmail{
-    padding: 5px;
-    margin: 10px;
-}
-.formEmail input {
-width: 80%;
-border-color: transparent;
-border-bottom: 1px solid #E2A405;
-
-}
-.formTlf {
-    padding: 5px;
-    margin: 10px;
-}
-.formTlf input {
-width: 80%;
-border-color: transparent;
-border-bottom: 1px solid #E2A405;
-}
-
-
-.formPadre3{
-    padding: 5px;
-    margin: 5px; 
-    width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: flex-start;
-}
-.formPadre4{
-    padding: 5px;
-    margin: 5px; 
-    width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: flex-start;
-
-}
-.enviar{
-padding-top: 50px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.enviar input {
- background-color: #E2A405;
- width: 20%;
- height: 25px;
-
-}
-
-/*laterales*/
-aside {
-    grid-area: lateral;
-    width: 100%;
-    height: 100%;
-   
-  }
-  
-
-
 /*-----------------------------------------shopPagesSmartphone--------------------------------------------**/
 .bodyPages{
     width: 100%;
@@ -374,41 +237,55 @@ width: 25px;
 .card-img-top{
     background-color: #dadada;
 }
-.busquedaBuscar{
-    width: 100px;
-    height: 35px;
-}
-.botonBuscar{
-    width: 80px;
-    height: 40px;
-}
+
 /*----------------------------------------smartphonepagesServicio-------------------------------------*/
-.bodyPages{
-    width:100%;
-    height: 150vh;
- background-color: #fff;
-}
+
+/*contenido*/
+
 #hero {
     grid-area: hero;
-
-
+    padding-top: 35%;
+   
    }
-.tituloBusqueda{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-}
-
+ /*tituloDeFomulario*/
 .titulo{
     width: 40%;
-font-size: 25px;
-color: #4D4D4D;;
+    color: #4D4D4D;;
 text-transform: uppercase;
 
-
-
 }
+/*barraDeBusqueda*/
+
+.logoMarcasYBusqueda{
+    padding-top: 40%;
+}
+.busquedaBuscar{
+    width: 170px;
+    height: 35px;
+    position: relative;
+    right: 180px;
+}
+.botonBuscar{
+    width: 70px;
+    height: 35px;
+    position: relative;
+    right: 185px;
+}
+
+.marcasPadre{
+    padding-top: 10px;
+    position: relative;
+    right: 50px;
+}
+
+.LogodeMcarcasPages{
+    margin:8px;
+}
+
+
+/*formulario*/
+
 .solicitud{
     font-size: 15px;
 }
@@ -522,10 +399,18 @@ align-items: center;
 /*laterales*/
 aside {
     grid-area: lateral;
-    width: 100%;
-    height: 100%;
+     width: 100%;
    
   }
+
+  .userCarritoPages{
+   padding-left: 20px;
+   padding-top: 20px;
+}
+.carritoUser{
+    display: flex;
+    flex-direction: row;
+}
 
 }
 
