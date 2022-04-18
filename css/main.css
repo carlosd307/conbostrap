@@ -1045,6 +1045,7 @@ margin-bottom: 3%;
 }
  
 .formEmailindex input {
+    margin-top:65px;
     width: 40%;
     border-color: transparent;
   border-bottom: 1px solid #E2A405;
@@ -1052,7 +1053,7 @@ margin-bottom: 3%;
  }
 
  .botonsuscribir{
-     margin-top:15px;
+     margin-top:25px;
      width: 20%;
  }
 
