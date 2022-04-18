@@ -900,7 +900,7 @@ width: 30px;
 
 
 .bodyIndex{
-    width: 95%;
+    width: 100%;
     height: 100vh;
     background-image: url(../img/homemoto.jpeg);
     background-size: cover;
@@ -913,14 +913,18 @@ width: 30px;
      "cabeza menu lateral"
      "hero hero lateral"
      "hero hero lateral"
+     "hero hero lateral"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
      "pie pie pie";
-     ;grid-template-columns: 30% 50% 20%;
-     ;grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+     ;grid-template-columns: 30% 50% 30%;
+     ;grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
 }
 
 header{
     grid-area: cabeza;
-   
+   position: relative;
+   left: 10%;
 }
 
 /*menuNavegacion*/
@@ -933,12 +937,8 @@ nav{
     display: flex;
     flex-direction: row;
   align-items: flex-start;
-  
- 
     
 }
-
- 
 
 
 .menuNav ul li a {
@@ -959,17 +959,18 @@ text-decoration: none;
     position: absolute;
     left: 0;
     transition: 0.4s ease-out;
-   
 }
 
+/*contenido*/
 
 #hero{
     grid-area: hero;
-width: 80%;
-height: 80%;
+width: 100%;
+height: 900px;
 }
 
 /*tituloIndex*/
+
 .heroTitle {
     width: 50%;
     color: #4D4D4D;;
@@ -986,20 +987,26 @@ height: 80%;
      color: #4D4D4D;;
     position: relative;
     left: 13%;
-    top: 5%;
-     
+    top: 5%;     
 }
-.btn{
-    background-color: #E2A405;
-    font-size: 14px;
-    color: black;
-}
-.card-img-top{
-    background-color: #dadada;
-}
+
+/*laterales*/
+
 aside{
     grid-area: lateral;
+  
    
+}
+
+.logoMarcas{
+    left: 20px;
+}
+.Marcasindex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
 .LogodeMcarcas{
@@ -1007,11 +1014,46 @@ aside{
     height: 50px;
     padding: 5px;
 }
-.container{
-  width: 97%;
+
+
+/*carrusel*/
+
+.carrusel{
+    grid-area: carrusel;
+background-color: whitesmoke;
+width: 100%;
+height: 1500px;
 
 }
 
+#carouselExampleControls{
+margin-left: 10px;
+margin-top: 10%;
+margin-bottom: 3%;
+    
+}
+
+
+/*newsletter*/
+.newsletter{
+ position: relative;
+ text-align: center;
+}
+ 
+.formEmailindex input {
+    width: 40%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+
+ .botonsuscribir{
+     margin-top:15px;
+     width: 20%;
+ }
+
+
+ /*footer*/
 
 footer {
     grid-area: pie;
@@ -1056,6 +1098,23 @@ width: 30px;
     height: 100%;
 }
 
+.btn{
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+}
+.card-img-top{
+    background-color: #dadada;
+}
+aside{
+    grid-area: lateral;
+   
+}
+
+.container{
+  width: 97%;
+
+}
 .buscar{
     width: 67%;
     height: 10%;
