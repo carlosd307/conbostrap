@@ -1004,32 +1004,14 @@ footer {
 }
 
 /*-----------------------------------------shopPages--------------------------------------------**/
+/*body*/
+
 .bodyPages{
     width: 100%;
     height: 100vh;
     background-color: whitesmoke;
 }
 
-.LogodeMcarcasPages{
-width: 30px;
-
-}
-.menuPages{
-    height: 50%;
-}
-.pintado{
-  
-    width: 125%;
-    height: 10%;
-  
-}
-.marcasPadre{
-  width: 40%;
-    height: 100%;
-    position: relative;
-    left: 50%;
-
-}
 .imgMarcas{
     width: 30%;
     height: 100%;
@@ -1056,9 +1038,7 @@ aside{
     width: 67%;
     height: 10%;
 }
-/*--------------------------------------pagesServicios-----------------------*/
-
-  /*logoPrincipal*/
+/*--------------------------------------pagesServicios---------------------------------------------------*/
 
 
     /*contenido*/
@@ -1075,7 +1055,7 @@ aside{
      
     }
   
-
+/*titulo*/
 
 .tituloPages{
     width: 30%;
@@ -1090,7 +1070,7 @@ aside{
   
 }
 
-
+/*formulario*/
 
 .formPadre {
     padding: 10px;
@@ -1185,13 +1165,20 @@ aside{
         grid-area: lateral;
         width: 100%;
         height: 100%;
+     }
+
+     /*marcas y busqueda*/
+
+.LogodeMcarcasPages{
+        width: 30px;
         
-      }
-/*laterales*/
-aside {
-    grid-area: lateral;
-     width: 100%;
-   
+}
+.marcasPadre{
+    width: 40%;
+      height: 100%;
+      position: relative;
+      right: 30%;
+  
   }
 .logoMarcasYBusqueda{
     padding-top: 10%;
