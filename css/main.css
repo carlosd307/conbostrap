@@ -30,9 +30,13 @@
      "menu cabeza lateral"
      "hero hero lateral"
      "hero hero lateral"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
      "pie pie pie";
-     ;grid-template-columns: 30% 30% 30%;
-     ;grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+     ;grid-template-columns: 30% 50% 10%;
+     ;grid-template-rows: 1fr 1fr 1fr 1fr 1r 3fr 3fr 1fr;
 }
   
 header{
@@ -82,37 +86,33 @@ text-decoration: none;
 
 #hero{
     grid-area: hero;
-width: 80%;
+width: 100%;
 height: 80%;
 }
 
 /*tituloIndex*/
 .heroTitle {
-    width: 50%;
+    width: 80%;
     color: #4D4D4D;;
     text-transform: uppercase;
    position: relative;
-   left: 13%;
+   left: 25%;
+   font-size: 35px;
   
 }
 
     
 
 .heroSubtitle {
-    width: 50%;
+    width: 80%;
      color: #4D4D4D;;
     position: relative;
-    left: 13%;
+    left: 25%;
+    font-size: 15px;
      
 }
-.btn{
-    background-color: #E2A405;
-    font-size: 14px;
-    color: black;
-}
-.card-img-top{
-    background-color: #dadada;
-}
+
+/*lateral*/
 aside{
     grid-area: lateral;
    
@@ -126,14 +126,58 @@ aside{
     padding: 5px;
 }
 
+.userCarrito{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+}  
+/*carrusel*/
 
+.carrusel{
+    grid-area: carrusel;
+background-color: whitesmoke;
+
+width: 116%;
+height: 800px;
+margin-top: 100%;
+}
+
+#carouselExampleControls{
+margin-left: 10px;
+margin-top: 10%;
+margin-bottom: 3%;
+    
+}
+
+
+/*newsletter*/
+.newsletter{
+ position: relative;
+ text-align: center;
+}
+ 
+.formEmailindex input {
+    margin-top:65px;
+    width: 65%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+
+ .botonsuscribir{
+     margin-top:25px;
+     width: 60%;
+ }
+
+ /*footer*/
+ 
 footer {
     grid-area: pie;
     background-color: #E2A405;
     color:  #4D4D4D;
     text-align: center;
     width: 100%;
-    height: 8%;
+    height: 10%;
     position: fixed;
     bottom: 0;
 }
@@ -314,7 +358,14 @@ width: 25px;
     left: 10px;
 }
   
-
+.btn{
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+}
+.card-img-top{
+    background-color: #dadada;
+}
 .busquedaBuscar{
     width: 100px;
     height: 35px;
