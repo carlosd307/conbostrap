@@ -934,6 +934,7 @@ nav{
    
 }
 .menu{
+    margin-left: 35%;
     display: flex;
     flex-direction: row;
   align-items: flex-start;
@@ -977,7 +978,7 @@ height: 900px;
     text-transform: uppercase;
    position: relative;
    left: 13%;
-   top: 5%;
+   top: 8%;
 }
 
     
@@ -987,7 +988,7 @@ height: 900px;
      color: #4D4D4D;;
     position: relative;
     left: 13%;
-    top: 5%;     
+    top: 8%;     
 }
 
 /*laterales*/
@@ -998,15 +999,18 @@ aside{
    
 }
 
-.logoMarcas{
-    left: 20px;
-}
+
 .Marcasindex{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
 
+}
+
+.logoMarcas{
+    padding-top: 13%;
+   
 }
 
 .LogodeMcarcas{
@@ -1061,7 +1065,7 @@ footer {
     color:  #4D4D4D;
     text-align: center;
     width: 100%;
-    height: 8%;
+    height: 10%;
     position: fixed;
     bottom: 0;
 }
@@ -1349,18 +1353,7 @@ aside{
 .busquedaSmarphone{
     display: none;
 }
-    /*footer*/
-    
-     footer {
-        grid-area: pie;
-        background-color: #E2A405;
-        color:  #4D4D4D;
-        text-align: center;
-        width: 100%;
-        height: 8%;
-        position: fixed;
-        bottom: 0;
-    }
+
     .redes {
         width: 20px;
         padding: 1px;
