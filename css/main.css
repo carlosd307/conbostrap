@@ -815,6 +815,7 @@ width: 30px;
 @media ( min-width :1024px) 
 {
 
+/*body*/
 
 .bodyIndex{
     width: 100%;
@@ -823,6 +824,8 @@ width: 30px;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*estructuracongrid*/
 
 #gridAreas{
  display: grid;
@@ -837,6 +840,8 @@ width: 30px;
      ;grid-template-columns: 30% 50% 30%;
      ;grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
 }
+
+/*header*/
 
 header{
     grid-area: cabeza;
@@ -898,7 +903,6 @@ height: 900px;
    top: 8%;
 }
 
-    
 
 .heroSubtitle {
     width: 50%;
@@ -1054,34 +1058,9 @@ aside{
 }
 /*--------------------------------------pagesServicios-----------------------*/
 
+  /*logoPrincipal*/
 
 
-.bodyIndex{
-    width: 90%;
-    height: 90vh;
-  background-color: whitesmoke;
-}
-
-    /*logoPrincipal*/
-    
-    .logo {
-    
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
-    .imgLogo{
-    width: 80%;
-    height: 60%;
-    padding: 5px;
-    margin: 5px;
-    
-    
-    }
-    
     /*contenido*/
     
     #hero {
@@ -1207,87 +1186,25 @@ aside{
         width: 100%;
         height: 100%;
         
-       
       }
- /*logosMarcas*/
-
-.marcasLogoPages{
-    width: 28px;
-    height:25px;
-    padding: 5px;
-    margin: 5px;
+/*laterales*/
+aside {
+    grid-area: lateral;
+     width: 100%;
    
-  
-}
-.logoDeMarcasPages{
-    width: 15%;
-    padding: 5px;
-  margin: 5px;
-  position: relative;
-  left: 80%;
-  bottom: 26%;
-
- 
-
-}
-
-
-.marcasLogoPagesSmarphone{
-    display: none;
-   
-  
-}
-.logoDeMarcasPagesSmarphone{
-  display: none;
-
-}
-
-.carritoPages{
-    width: 50%;   
-   height: 12%;
-   padding: 5px;
-   margin: 5px;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   align-items: center
   }
-  
-  .userCarritoPages{
-     width: 30%;
-     height: 35%;
-     padding: 2px;
-     margin: 2px;
-    }
-
-    /*barraDeBusqueda*/
-.busqueda{
-    width: 100%;
-    height: 50px;
-    max-width: 400px;
+.logoMarcasYBusqueda{
+    padding-top: 10%;
     position: relative;
-    bottom:33%;
-    left: 94%;
-    overflow: hidden;
-    
-}
-.buscar input {
-    width: 80%;
-    height: 40%;
-    background: none;
-    color: #fff;
-    
-
-}
-.busquedaSmarphone{
-    display: none;
+    right: 10%;
 }
 
-    .redes {
-        width: 20px;
-        padding: 1px;
-       
-    }
+.imgMarcas{
+    position: relative;
+    right: 100%;
+    bottom: 40px;
+
+}
     /*iconoWs*/
     .iconoWs {
         width: 45px;
