@@ -403,88 +403,193 @@ aside {
     background-position: center;
     background-repeat: no-repeat;
 }
+/*estructuracongrid*/
+
 #gridAreas{
-      display: grid;
-    grid-template-areas:"cabeza menu lateral"
-     "cabeza menu lateral"
-     "hero hero lateral"
-     "hero hero lateral"
-     "pie pie pie";
-     ;grid-template-columns: 30% 50% 20%;
-     ;grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
-}
-
-header{
-    grid-area: cabeza;
+    display: grid;
+       grid-template-areas:"cabeza menu lateral"
+        "cabeza menu lateral"
+        "hero hero lateral"
+        "hero hero lateral"
+        "hero hero lateral"
+        "carrusel carrusel carrusel"
+        "carrusel carrusel carrusel"
+        "pie pie pie";
+        ;grid-template-columns: 30% 50% 30%;
+        ;grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
+   }
    
-}
-
-/*menuNavegacion*/
-
-nav{
-    grid-area: menu;
+   /*header*/
    
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-  align-items: flex-start;
-  
- 
-    
-}
-
- 
-
-
-.menuNav ul li a {
-    display: block;
-text-decoration: none;
+   header{
+       grid-area: cabeza;
+      position: relative;
+      left: 10%;
+   }
    
-}
-
-.menuNav li:hover:before {
-    width: 100%;
-}
-
-.menuNav ul li::before {
-    content:"";
-    height: 6px;
-    width:0%;
-    background: #E2A405;
-    position: absolute;
-    left: 0;
-    transition: 0.4s ease-out;
+   /*menuNavegacion*/
    
-}
-
-
-#hero{
-    grid-area: hero;
-width: 80%;
-height: 80%;
-}
-
-/*tituloIndex*/
-.heroTitle {
-    width: 50%;
-    color: #4D4D4D;;
-    text-transform: uppercase;
-   position: relative;
-   left: 13%;
-   top: 5%;
-}
-
-    
-
-.heroSubtitle {
-    width: 50%;
-     color: #4D4D4D;;
-    position: relative;
-    left: 13%;
-    top: 5%;
+   nav{
+       grid-area: menu;
+      
+   }
+   .menu{
+       margin-left: 35%;
+       display: flex;
+       flex-direction: row;
+     align-items: flex-start;
+       
+   }
+   
+   
+   .menuNav ul li a {
+       display: block;
+   text-decoration: none;
+      
+   }
+   
+   .menuNav li:hover:before {
+       width: 100%;
+   }
+   
+   .menuNav ul li::before {
+       content:"";
+       height: 6px;
+       width:0%;
+       background: #E2A405;
+       position: absolute;
+       left: 0;
+       transition: 0.4s ease-out;
+   }
+   
+   /*contenido*/
+   
+   #hero{
+       grid-area: hero;
+   width: 100%;
+   height: 900px;
+   }
+   
+   /*tituloIndex*/
+   
+   .heroTitle {
+       width: 50%;
+       color: #4D4D4D;;
+       text-transform: uppercase;
+      position: relative;
+      left: 13%;
+      top: 8%;
+   }
+   
+   
+   .heroSubtitle {
+       width: 50%;
+        color: #4D4D4D;;
+       position: relative;
+       left: 13%;
+       top: 8%;     
+   }
+   
+   /*laterales*/
+   
+   aside{
+       grid-area: lateral;
      
+      
+   }
+   
+   
+   .Marcasindex{
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       align-items: flex-end;
+   
+   }
+   
+   .logoMarcas{
+       padding-top: 13%;
+      
+   }
+   
+   .LogodeMcarcas{
+       width:50px;
+       height: 50px;
+       padding: 5px;
+   }
+   
+   
+   /*carrusel*/
+   
+   .heroTitleCarru{
+       width: 100%;
+       font-size: 30px;
+       padding-top:2%;
+       padding-left: 50px;
+   }
+   .heroSubtitleCarru{
+   padding-left: 80px;
+   
+   }
+   
+   .carrusel{
+   grid-area: carrusel;
+   background-color: whitesmoke;
+   width: 100%;
+   height: 1500px;
+   
+   }
+   
+   #carouselExampleControls{
+   margin-left: 10px;
+   margin-top: 5%;
+   margin-bottom: 3%;
+       
+   }
+   
+   
+   /*newsletter*/
+   .newsletter{
+    position: relative;
+    text-align: center;
+   }
+    
+   .formEmailindex input {
+       margin-top:65px;
+       width: 40%;
+       border-color: transparent;
+     border-bottom: 1px solid #E2A405;
+      
+    }
+   
+    .botonsuscribir{
+        margin-top:25px;
+        width: 20%;
+    }
+   
+   
+    /*footer*/
+   
+   footer {
+       grid-area: pie;
+       background-color: #E2A405;
+       color:  #4D4D4D;
+       text-align: center;
+       width: 100%;
+       height: 10%;
+       position: fixed;
+       bottom: 0;
+   }
+/*-----------------------------------------shopPagesTablet--------------------------------------------**/
+/*body*/
+
+.bodyPages{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
 }
+
+
 .btn{
     background-color: #E2A405;
     font-size: 14px;
@@ -498,91 +603,16 @@ aside{
    
 }
 
-.LogodeMcarcas{
-    width:50px;
-    height: 50px;
-    padding: 5px;
-}
 .container{
   width: 97%;
 
 }
-
-
-footer {
-    grid-area: pie;
-    background-color: #E2A405;
-    color:  #4D4D4D;
-    text-align: center;
-    width: 100%;
-    height: 8%;
-    position: fixed;
-    bottom: 0;
-}
-/*-----------------------------------------shopPagesTablet--------------------------------------------**/
-.bodyPages{
-    width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;
-}
-
-.LogodeMcarcasPages{
-width: 30px;
-
-}
-.menuPages{
-    height: 50%;
-}
-.pintado{
-  
-    width: 125%;
-    height: 10%;
-  
-}
-.marcasPadre{
-  width: 40%;
-    height: 100%;
-    position: relative;
-    left: 50%;
-
-}
-.imgMarcas{
-    width: 30%;
-    height: 100%;
-}
-
 .buscar{
     width: 67%;
     height: 10%;
 }
 /*--------------------------------------pagesServiciosTablet-----------------------*/
 
-.bodyIndex{
-    width: 90%;
-    height: 90vh;
-  background-color: whitesmoke;
-}
-
-    /*logoPrincipal*/
-    
-    .logo {
-    
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
-    .imgLogo{
-    width: 80%;
-    height: 60%;
-    padding: 5px;
-    margin: 5px;
-    
-    
-    }
-    
     /*contenido*/
     
     #hero {
@@ -597,7 +627,7 @@ width: 30px;
      
     }
   
-
+/*titulo*/
 
 .tituloPages{
     width: 30%;
@@ -612,7 +642,7 @@ width: 30px;
   
 }
 
-
+/*formulario*/
 
 .formPadre {
     padding: 10px;
@@ -707,99 +737,42 @@ width: 30px;
         grid-area: lateral;
         width: 100%;
         height: 100%;
+     }
+
+    /*userCarrito*/
+     
+    .userCarritoPages{
+        display: flex;
+        flex-direction: row;
+      justify-content: center;  
+      
+    }
+
+     /*marcas y busqueda*/
+
+.LogodeMcarcasPages{
+        width: 30px;
         
-       
-      }
- /*logosMarcas*/
-
-.marcasLogoPages{
-    width: 28px;
-    height:25px;
-    padding: 5px;
-    margin: 5px;
-   
+}
+.marcasPadre{
+    width: 40%;
+      height: 100%;
+      position: relative;
+      right: 40%;
   
-}
-.logoDeMarcasPages{
-    width: 15%;
-    padding: 5px;
-  margin: 5px;
-  position: relative;
-  left: 80%;
-  bottom: 26%;
-
- 
-
-}
-
-
-.marcasLogoPagesSmarphone{
-    display: none;
-   
-  
-}
-.logoDeMarcasPagesSmarphone{
-  display: none;
-
-}
-
-.carritoPages{
-    width: 50%;   
-   height: 12%;
-   padding: 5px;
-   margin: 5px;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   align-items: center
   }
-  
-  .userCarritoPages{
-     width: 30%;
-     height: 35%;
-     padding: 2px;
-     margin: 2px;
-    }
-
-    /*barraDeBusqueda*/
-.busqueda{
-    width: 100%;
-    height: 50px;
-    max-width: 400px;
+.logoMarcasYBusqueda{
+    padding-top: 10%;
     position: relative;
-    bottom:33%;
-    left: 94%;
-    overflow: hidden;
-    
+    right: 15%;
 }
-.buscar input {
-    width: 80%;
-    height: 40%;
-    background: none;
-    color: #fff;
-    
+
+.imgMarcas{
+    position: relative;
+    right: 100%;
+    bottom: 40px;
 
 }
-.busquedaSmarphone{
-    display: none;
-}
-    /*footer*/
-    
-     footer {
-        grid-area: pie;
-        background-color: #E2A405;
-        color:  #4D4D4D;
-        text-align: center;
-        width: 100%;
-        height: 8%;
-        position: fixed;
-        bottom: 0;
-    }
-    .redes {
-        width: 20px;
-        padding: 1px;
-       
-    }
     /*iconoWs*/
     .iconoWs {
         width: 45px;
@@ -807,10 +780,7 @@ width: 30px;
         left: 95%;
       top: 89%;
     }
-
 }
-
-
 /*-----------------------------------desktop-----------------------------------------------------------*/
 @media ( min-width :1024px) 
 {
@@ -1173,13 +1143,13 @@ aside{
     width: 40%;
       height: 100%;
       position: relative;
-      right: 30%;
+      right: 48%;
   
   }
 .logoMarcasYBusqueda{
-    padding-top: 10%;
+    padding-top: 12%;
     position: relative;
-    right: 10%;
+    right: 30%;
 }
 
 .imgMarcas{
